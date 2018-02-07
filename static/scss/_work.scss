@@ -1,0 +1,69 @@
+body.work{
+  .main-header{
+    height:100px;
+    padding:10px;
+    .logo, .logo svg{
+      height:80px;
+      width:80px;
+      margin:0 auto;
+      ellipse{
+        fill:#ddd;
+        @include transition( fill 0.8s ease );
+      }
+    }
+    a svg{
+      @include scale(1);
+      @include transition( transform 0.2s ease );
+    }
+    a:hover .logo svg{
+      @include scale(1.1);
+      #Oval-1{
+        fill:rgba(#50E3C2, 0.8);
+      }
+      #Oval-2{
+        fill:rgba(#D0011B, 0.8);
+      }
+      #Oval-3{
+        fill:rgba(#4990E2, 0.8);
+      }
+    }
+  }
+  section{
+    padding:20px;
+    header{
+      text-align:center;
+    }
+    img, aside{
+      display:block;
+      max-width:100%;
+      width:800px;
+      margin:0 auto;
+    }
+    header, aside{
+      margin-bottom:40px;
+    }
+  }
+  h2{
+    font-size:6rem;
+    font-weight: 100;
+    margin-left:-7px;
+  }
+  h3{
+    font-size:1.5rem;
+  }
+  h4{
+    font-size:1.25rem;
+    font-weight:600;
+  }
+  p{
+    margin-top:20px;
+    line-height:1.5;
+  }
+}
+
+@media screen and (max-width:800px){
+  body.work h2{
+    font-size:4rem;
+    margin-bottom:10px;
+  }
+}

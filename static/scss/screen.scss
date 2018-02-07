@@ -1,0 +1,37 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+.group:after              { display: block; visibility: hidden; clear: both; height: 0; content: ""; line-height:0; } /* Clearfix */
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+$dark : #334166;
+
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+
+a, a:link, a:visited{
+  text-decoration: none;
+  color:inherit;
+}
+
+.caps{
+  font-weight:600;
+  letter-spacing:2px;
+  text-transform: uppercase;
+}
+
+body{
+  font-family:"Titillium Web", "Helvetica", "Arial", sans-serif;
+  -webkit-font-smoothing:antialiased;
+  color:$dark;
+}
+
+@import "_landing.scss";
+@import "_work.scss";
